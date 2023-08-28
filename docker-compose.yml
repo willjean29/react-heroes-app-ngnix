@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  heroes-app: 
+    build:
+      context: .
+      target: prod
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    container_name: heroes-app
